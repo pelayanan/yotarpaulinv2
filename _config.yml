@@ -66,6 +66,7 @@ exclude:
   - LICENSE
   - Makefile
   - AGENTS.md
+  - design.md
   - proposal-website.txt
   - isi-website.md
   - make_og.py
