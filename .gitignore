@@ -10,4 +10,5 @@ vendor/
 .DS_Store
 *.swp
 
-# Hallmark run record (screenshots, before/after).hallmark/
+# Hallmark run record
+.hallmark/
