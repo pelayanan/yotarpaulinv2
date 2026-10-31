@@ -341,7 +341,7 @@
 .ladder__track {
   position: relative;
   display: block;
-  height: 28px;
+  height: 24px;
   background: var(--color-paper-2);
   border-radius: 1px;
 }
