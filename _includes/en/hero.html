@@ -1,36 +1,75 @@
-<section class="hero" id="home">
-  <div class="container hero__inner">
-    <div class="hero__copy reveal">
-      <span class="eyebrow">National Tarpaulin Manufacturer &amp; Supplier</span>
-      <h1>Quality Tarpaulins for <span class="hl">Mining</span> &amp; <span class="hl">Large-Scale Projects</span></h1>
-      <p>
-        YO TERPAL NUSANTARA RAYA manufactures and supplies high-quality tarpaulins —
-        strong, waterproof, and UV resistant — ready to ship for mining, construction,
-        logistics, and agricultural industries across Indonesia.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--yellow" href="{{ site.whatsapp }}" target="_blank" rel="noopener">
-          <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Contact Us
+<section class="opening" id="home">
+  <div class="container opening__in">
+    <div class="opening__copy">
+      <h1 class="opening__title">Tarpaulin for mining, 80 to 450 GSM</h1>
+      <p class="opening__line">Made in Surabaya and shipped across Indonesia.</p>
+      <div class="opening__acts">
+        <a class="act" href="{{ site.whatsapp }}" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Contact us
         </a>
-        <a class="btn btn--ghost" href="{{ site.baseurl }}/en/products/">View Products <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="act act--quiet" href="{{ site.baseurl }}/en/products/">View products</a>
       </div>
-      <ul class="hero__chips">
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Strong Material</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> 100% Waterproof</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Heat &amp; UV Resistant</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Factory Price</li>
-      </ul>
+      <div class="opening__meta">
+        <span><b>34+</b> provinces served</span>
+        <span><b>24/7</b> urgent project line</span>
+        <span><b>Custom</b> size &amp; printing</span>
+      </div>
     </div>
 
-    <div class="hero__media reveal">
-      <img src="{{ site.baseurl }}/assets/images/hero-truck.webp" alt="Truck loaded with blue YO TERPAL NUSANTARA RAYA tarpaulins on the highway" width="1200" height="669" fetchpriority="high">
-      <div class="hero__badge hero__badge--a">
-        <img src="{{ site.baseurl }}/assets/images/ic-247.webp" alt="" width="52" height="52">
-        <div><strong>Ready 24/7</strong><span>For urgent project needs</span></div>
-      </div>
-      <div class="hero__badge hero__badge--b">
-        <img src="{{ site.baseurl }}/assets/images/ic-guarantee.webp" alt="" width="52" height="52">
-        <div><strong>Premium Quality</strong><span>Product quality warranty</span></div>
+    <!-- GSM ranges come from _data/products_en.yml (each product's specs), drawn on an 80-450 GSM scale.
+         left/width = where the range sits on that scale, not an invented figure. -->
+    <div class="ladder">
+      <table class="ladder__table">
+        <caption>Thickness range of each tarpaulin in GSM</caption>
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col" aria-hidden="true">Range</th>
+            <th scope="col">GSM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-colour="biru-muda">
+            <th scope="row">Light Blue Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:0%;width:16.2%"></span></span></td>
+            <td>80&#8211;140</td>
+          </tr>
+          <tr data-colour="hijau">
+            <th scope="row">Green Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:2.7%;width:16.2%"></span></span></td>
+            <td>90&#8211;150</td>
+          </tr>
+          <tr data-colour="kuning">
+            <th scope="row">Gold Yellow Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:5.4%;width:21.6%"></span></span></td>
+            <td>100&#8211;180</td>
+          </tr>
+          <tr data-colour="biru">
+            <th scope="row">Blue Premium Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:10.8%;width:21.6%"></span></span></td>
+            <td>120&#8211;200</td>
+          </tr>
+          <tr data-colour="oranye">
+            <th scope="row">Orange Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:10.8%;width:21.6%"></span></span></td>
+            <td>120&#8211;200</td>
+          </tr>
+          <tr data-colour="navy">
+            <th scope="row">Navy Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:18.9%;width:27%"></span></span></td>
+            <td>150&#8211;250</td>
+          </tr>
+          <tr data-colour="pvc">
+            <th scope="row">Transparent PVC Tarpaulin</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:45.9%;width:54.1%"></span></span></td>
+            <td>250&#8211;450</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="ladder__scale">
+        <span>80 GSM</span>
+        <span>265</span>
+        <span>450 GSM</span>
       </div>
     </div>
   </div>
