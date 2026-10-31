@@ -239,7 +239,7 @@
   background: var(--color-paper);
   border-bottom: var(--rule-hair) solid var(--color-rule);
   padding-block: var(--space-xl);
-  min-height: min(80svh, 792px);
+  min-height: min(86svh, 820px);
   display: grid;
   align-content: center;
 }
