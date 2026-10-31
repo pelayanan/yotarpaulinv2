@@ -1,36 +1,75 @@
-<section class="hero" id="home">
-  <div class="container hero__inner">
-    <div class="hero__copy reveal">
-      <span class="eyebrow">Produsen &amp; Pemasok Terpal Nasional</span>
-      <h1>Terpal Berkualitas untuk <span class="hl">Tambang</span> &amp; <span class="hl">Proyek Skala Besar</span></h1>
-      <p>
-        YO TERPAL NUSANTARA RAYA memproduksi dan menyediakan terpal berkualitas tinggi —
-        kuat, tahan air, dan tahan UV — siap dikirim untuk kebutuhan industri pertambangan,
-        konstruksi, logistik, dan pertanian di seluruh Indonesia.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--yellow" href="{{ site.whatsapp }}" target="_blank" rel="noopener">
-          <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Hubungi Kami
+<section class="opening" id="home">
+  <div class="container opening__in">
+    <div class="opening__copy">
+      <h1 class="opening__title">Terpal untuk tambang, 80 sampai 450 GSM</h1>
+      <p class="opening__line">Diproduksi di Surabaya dan dikirim ke seluruh Indonesia.</p>
+      <div class="opening__acts">
+        <a class="act" href="{{ site.whatsapp }}" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Hubungi kami
         </a>
-        <a class="btn btn--ghost" href="{{ site.baseurl }}/produk/">Lihat Produk <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="act act--quiet" href="{{ site.baseurl }}/produk/">Lihat produk</a>
       </div>
-      <ul class="hero__chips">
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Bahan Kuat</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> 100% Tahan Air</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Tahan Panas &amp; UV</li>
-        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Harga Pabrik</li>
-      </ul>
+      <div class="opening__meta">
+        <span><b>34+</b> provinsi terkirim</span>
+        <span><b>24/7</b> layanan darurat proyek</span>
+        <span><b>Custom</b> ukuran &amp; sablon</span>
+      </div>
     </div>
 
-    <div class="hero__media reveal">
-      <img src="{{ site.baseurl }}/assets/images/hero-truck.webp" alt="Truk bermuatan terpal biru YO TERPAL NUSANTARA RAYA melintas di jalan tol" width="1200" height="669" fetchpriority="high">
-      <div class="hero__badge hero__badge--a">
-        <img src="{{ site.baseurl }}/assets/images/ic-247.webp" alt="" width="52" height="52">
-        <div><strong>Siap 24/7</strong><span>Untuk kebutuhan darurat proyek</span></div>
-      </div>
-      <div class="hero__badge hero__badge--b">
-        <img src="{{ site.baseurl }}/assets/images/ic-guarantee.webp" alt="" width="52" height="52">
-        <div><strong>Premium Quality</strong><span>Garansi kualitas produk</span></div>
+    {# Rentang GSM dari _data/products.yml (specs tiap produk), digambar pada skala 80-450 GSM.
+       left/width = posisi rentang pada skala itu, bukan angka karangan. #}
+    <div class="ladder">
+      <table class="ladder__table">
+        <caption>Rentang ketebalan tiap terpal dalam GSM</caption>
+        <thead>
+          <tr>
+            <th scope="col">Produk</th>
+            <th scope="col" aria-hidden="true">Rentang</th>
+            <th scope="col">GSM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-colour="biru-muda">
+            <th scope="row">Terpal Biru Muda</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:0%;width:16.2%"></span></span></td>
+            <td>80&#8211;140</td>
+          </tr>
+          <tr data-colour="hijau">
+            <th scope="row">Terpal Hijau</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:2.7%;width:16.2%"></span></span></td>
+            <td>90&#8211;150</td>
+          </tr>
+          <tr data-colour="kuning">
+            <th scope="row">Terpal Kuning Gold</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:5.4%;width:21.6%"></span></span></td>
+            <td>100&#8211;180</td>
+          </tr>
+          <tr data-colour="biru">
+            <th scope="row">Terpal Biru Premium</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:10.8%;width:21.6%"></span></span></td>
+            <td>120&#8211;200</td>
+          </tr>
+          <tr data-colour="oranye">
+            <th scope="row">Terpal Oranye</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:10.8%;width:21.6%"></span></span></td>
+            <td>120&#8211;200</td>
+          </tr>
+          <tr data-colour="navy">
+            <th scope="row">Terpal Navy</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:18.9%;width:27%"></span></span></td>
+            <td>150&#8211;250</td>
+          </tr>
+          <tr data-colour="pvc">
+            <th scope="row">Terpal PVC Transparan</th>
+            <td class="ladder__cell" aria-hidden="true"><span class="ladder__track"><span class="ladder__bar" style="left:45.9%;width:54.1%"></span></span></td>
+            <td>250&#8211;450</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="ladder__scale">
+        <span>80 GSM</span>
+        <span>265</span>
+        <span>450 GSM</span>
       </div>
     </div>
   </div>

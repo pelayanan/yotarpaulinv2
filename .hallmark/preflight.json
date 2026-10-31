@@ -1,0 +1,70 @@
+{
+  "run": "redesign",
+  "target": "F:/repo/yoterpal-clone",
+  "repo": "pelayanan/yotarpaulinv2",
+  "live": "https://v2.yoterpal.com/",
+  "date": "2026-10-31",
+  "signals": {
+    "design_md": null,
+    "hallmark_brand_spec": null,
+    "brand": {
+      "name": "YO TERPAL NUSANTARA RAYA",
+      "operator": "CV. Yo Terpal Nusantara Raya",
+      "owner": "Yoke Albertin Sumayow (Owner)",
+      "logo": "assets/images/logo.webp (v1) + assets/images/logo-white.webp",
+      "source": "_config.yml:24, assets/css/styles.scss:1"
+    },
+    "framework": "Jekyll 4 / GitHub Pages (no local Ruby, no local build)",
+    "fonts": {
+      "display": "Barlow Condensed",
+      "body": "Plus Jakarta Sans",
+      "source": "assets/css/styles.scss (--font-display, --font-body)"
+    },
+    "palette": {
+      "blue-950": "#041630",
+      "blue-900": "#072a5c",
+      "blue-800": "#0a3a7e",
+      "blue-700": "#0f4ba3",
+      "blue-600": "#135ebf",
+      "blue-500": "#2079e0",
+      "sky-100": "#eaf3fc",
+      "sky-50": "#f5f9fe",
+      "yellow": "#ff8a1f",
+      "yellow-dark": "#e2670d",
+      "ink": "#12263f",
+      "muted": "#51677f",
+      "line": "#dbe7f3"
+    },
+    "stylesheets": ["assets/css/styles.scss (37 KB, single stylesheet)"],
+    "layouts": ["default.html", "default_en.html", "product.html", "product_en.html"],
+    "includes": 30,
+    "product_reachable": true,
+    "together_api_key": false,
+    "inspo_mcp": false
+  },
+  "pages": {
+    "homepage_id": { "route": "/", "file": "index.html", "kind": "page", "composition": "15 includes" },
+    "products_index": { "route": "/produk/", "file": "produk.html", "kind": "page" },
+    "product_detail": { "route": "/produk/<slug>/", "file": "produk/<slug>.html", "kind": "page", "count": 10 },
+    "about": { "route": "/tentang/", "file": "tentang.html", "kind": "page" },
+    "gallery": { "route": "/galeri/", "file": "galeri.html", "kind": "page" },
+    "advantages": { "route": "/keunggulan/", "file": "keunggulan.html", "kind": "page" },
+    "applications": { "route": "/aplikasi/", "file": "aplikasi.html", "kind": "page" },
+    "contact": { "route": "/kontak/", "file": "kontak.html", "kind": "page" },
+    "en_mirror": { "route": "/en/*", "file": "en/", "kind": "page", "count": 17 },
+    "documents": { "routes": ["/compro-yoterpal/", "/proposal-website/", "/kwitansi-dp/", "/kwitansi-pelunasan/"], "kind": "document" }
+  },
+  "preserved": [
+    "every link in .hallmark/before.json (31)",
+    "every form field (6) and #wa-form handler read by main.js",
+    "brand tokens and logo files",
+    "all stated facts: phone numbers, address, email, social handles, 10 product names, 4 steps, 34+ provinces",
+    "Jekyll front matter contract: layout, permalink, lang, lang_other, title, description, image",
+    "include/layout structure so the EN mirror keeps 1:1 parity"
+  ],
+  "introduced": [
+    "assets/css/tokens.css + assets/css/base.css (Hallmark scaffold)",
+    "a locked design.md once the system is settled",
+    ".hallmark/ working record (before.txt, before.json, before/, log.json, compare.html)"
+  ]
+}
